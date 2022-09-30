@@ -1,16 +1,3 @@
-# penal-connection
-The source code of penal connection, which was first proposed in `Rethinking skip connection model as a learnable Markov chain`.
-
-## Install
-
-```bash
-git clone https://github.com/densechen/penal-connection.git
-pip install -e .
-```
-
-## Usage
-
-```python
 import penal_connection as pc
 
 import torch.nn as nn
@@ -41,19 +28,3 @@ class Net(nn.Module):
         return self.fc_4(fc_3)
 
 print(Net())
-
-
-```
-
-```bash
-(base) % python test.py 
-Net(
-  (fc_1): Linear(in_features=1, out_features=4, bias=True)
-  (fc_2): Sequential(
-    (0): Linear(in_features=4, out_features=4, bias=True)
-    (1): PenalConnection(tau=0.0001)
-  )
-  (fc_3): Linear(in_features=4, out_features=4, bias=True)
-  (fc_4): Linear(in_features=4, out_features=1, bias=True)
-)
-```
