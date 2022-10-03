@@ -1,5 +1,5 @@
 # penal-connection
-The source code of penal connection, which was first proposed in `Rethinking skip connection model as a learnable Markov chain`.
+The source code of penal connection, which was first proposed in [Rethinking skip connection model as a learnable Markov chain](https://arxiv.org/pdf/2209.15278.pdf).
 
 ## Install
 
