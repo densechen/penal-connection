@@ -57,3 +57,14 @@ Net(
   (fc_4): Linear(in_features=4, out_features=1, bias=True)
 )
 ```
+
+## Cite
+
+```
+@misc{2209.15278,
+Author = {Dengsheng Chen and Jie Hu and Wenwen Qiang and Xiaoming Wei and Enhua Wu},
+Title = {Rethinking skip connection model as a learnable Markov chain},
+Year = {2022},
+Eprint = {arXiv:2209.15278},
+}
+```
