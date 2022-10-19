@@ -5,7 +5,7 @@ def penal_connection(z, tau=3e-4):
     """Register a penal connection function if z requires grad.
     """
     if z.requires_grad:
-        return z.register_hook(lambda grad, z=z.detach().clone(): grad + tau * z)
+        z.register_hook(lambda grad, z=z.detach().clone(): grad + tau * z)
     return z
 
 

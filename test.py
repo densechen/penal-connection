@@ -1,5 +1,5 @@
 import penal_connection as pc
-
+import torch
 import torch.nn as nn
 
 class Net(nn.Module):
@@ -27,4 +27,14 @@ class Net(nn.Module):
 
         return self.fc_4(fc_3)
 
-print(Net())
+net = Net()
+optim = torch.optim.SGD(net.parameters(), lr=1e-3)
+
+data = torch.randn(16, 1)
+for i in range(100):
+    output = net(data)
+    loss = output.pow(2).sum()
+    optim.zero_grad()
+    loss.backward()
+    optim.step()
+    print(loss.item())
