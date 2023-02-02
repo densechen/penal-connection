@@ -1,6 +1,8 @@
 # penal-connection
 The source code of penal connection, which was first proposed in [Rethinking skip connection model as a learnable Markov chain](https://arxiv.org/pdf/2209.15278.pdf).
 
+Published as a conference paper at ICLR 2023.
+
 ## Install
 
 ```bash
